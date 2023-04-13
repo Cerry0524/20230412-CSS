@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width:100px;
+            height:100px;
+            color:red;
+        }
+        img{
+            width:100px;
+            height: 100px;
+        }
+        span{
+            width:100px;
+            height:100px;
+            border:1px solid gray;
+        }
+        .myDiv{
+            display:block;
+            width:100px;
+            height: 100px;
+            border: 1px solid gray;
+            text-align: center;   
+            /* 垂直置中 */
+            vertical-align: middle;     
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        display:inline-block
+    </h3>
+    <p>img,button,textarea.select</p>
+    <p>1.不會換行</p>
+    <p>2.可設定width.height</p>
+    <p>3.會空格</p>
+    <button type="button">button</button>
+    <button type="button">button</button>
+    <button type="button">button</button>
+    <br><br>
+    <img src="https://picsum.photos/id/237/200/300" alt="">
+    <img src="https://picsum.photos/id/237/200/300" alt="">
+    <img src="https://picsum.photos/id/237/200/300" alt="">
+    <hr>
+    <h3>
+        display : inline
+    </h3>
+    <p>a, span, label, ::before, ::after </p>
+    <p>1.不會換行</p>
+    <p>2.不可以設定width, hight</p>
+    <p>Lorem ipsum dolor sit amet.
+        <span>agjogjoa</span>gaijog.
+    </p>
+    <div>
+        <a href="">inline</a>
+    </div>
+
+    <hr>
+    <h3>
+        display : block
+    </h3>
+    <p>div, p, h1~h6, header, section, br, li, ul, ol .....</p>
+    <p>1.可以換行</p>
+    <p>2.可以設定width, height</p>
+    <p>
+        Hello P Tag
+    </p>
+    <div>
+        Hellow div Tag
+    </div>
+    <div class="myDiv">
+        <button type="button">inline</button>
+        <button type="button">inline</button>
+        <button type="button">inline</button>
+    </div>
+</body>
+</html>

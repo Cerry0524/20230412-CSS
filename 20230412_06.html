@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction:row;
+            /* height: 500px; */
+            width:1024px;
+            height:768px;
+            justify-content: center;
+            /* margin auto 不能用在flexbox裡面 */
+            /* justice-content置中 */
+            /* margin:auto */
+
+            /*
+                固定板型
+                width:1024非rwd
+                auto使用margin 
+             */
+
+             /* 
+                rwd版型 沒有width
+                置中
+                margin auto是失效的
+                justify-contnet
+             */
+        }
+
+        .item {
+
+        }
+
+        .item1 {
+            background-color: lightgreen;
+            flex-basis: 800px;
+        }
+
+        .item2 {
+            background-color: rgb(6, 11, 31);
+            /* clac計算數字-數字 減號與數字中間要有空格 */
+            flex-basis: calc(100% - 20%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">
+
+        </div>
+        <div class="item item2">
+
+        </div>
+    </div>
+</body>
+
+</html>

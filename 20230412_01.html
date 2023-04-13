@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=form, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input {
+            background-color: antiquewhite;
+        } */
+
+        /* input[type='number'] {
+            background-color: red;
+        } */
+
+        /* input[type='text'] {
+            background-color: blue;
+        } */
+        /* input裡面只要不是number的背景就改成XX */
+        /* not反向選擇 */
+        /* not(選擇器) */
+        input:not(input[type='number']) {
+            background-color: blueviolet;
+
+        }
+
+        .test {
+            color: red;
+        }
+        /* 在myDive底下的p只要不是test2的 */
+        .myDiv>p:not(.test2) {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <p>
+            <label for="name">name</label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <label for="name">age</label>
+            <input type="number" name="age" id="age">
+        </p>
+        <p>
+            <label for="name">name2</label>
+            <input type="text" name="name2" id="name2">
+        </p>
+        <p>
+            <label for="name">age2</label>
+            <input type="number" name="age2" id="age2">
+        </p>
+    </form>
+    <div class="myDiv">
+        <p class="test1">
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p class="test2">
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p class="test3">
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p class="test4">
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* overflow: scroll; */
+            overflow: hidden;
+        }
+
+        .container {
+            /* 宣告使用flexbox */
+            display: flex;
+            background-color: aqua;
+            padding: 30px;
+
+            /* justify-content: center; */
+            flex-direction: row;
+            justify-content: space-around;
+            /* flex-wrap預設nowarp不換行 */
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 300px;
+            height: 500px;
+            background-color: #ccc;
+            text-align: center;
+            font-size: 50px;
+            padding: 10px;
+            margin: 30px;
+        }
+
+        /* 特別狀況 */
+        .item1 {
+            width: 600px;
+            background-color: chartreuse;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 單獨設定不同狀態item item1 -->
+        <div class="item item1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, itaque. Maxime
+            aperiam temporibus explicabo corrupti ipsum tempore et autem qui error, fugiat, reiciendis sit at corporis!
+            Excepturi repellat asperiores, deleniti dignissimos aut tempore est numquam nulla itaque incidunt
+            repellendus dolore porro magni reiciendis, perspiciatis dolorem cupiditate quis non saepe reprehenderit?
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum sapiente doloremque quod dolorum
+            suscipit fuga quidem et. Aut, inventore, magni alias consequatur tempora repellendus quis nostrum eum eaque
+            temporibus accusamus odit rerum, amet ab. Eius culpa necessitatibus ipsa voluptatem blanditiis.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repudiandae ad ex saepe
+            nesciunt! Doloremque optio ea reiciendis, quia maiores alias, iste quasi rerum quod nisi libero quo harum
+            voluptas laboriosam! Id, quibusdam. Adipisci impedit quasi vero tempora. Quos facilis explicabo, ut voluptas
+            delectus inventore.</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+
+</html>
